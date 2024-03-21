@@ -2,6 +2,7 @@
 header, footer {
     font-family: arial;
     background: blue;
+    padding: 10px;
     margin: 0;
 }
 

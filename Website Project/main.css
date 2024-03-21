@@ -1,0 +1,46 @@
+header, footer {
+    font-family: arial;
+    background: blue;
+}
+
+body {
+    font-family: arial;
+    background: white;
+}
+
+h1, h3, h4 { 
+    color: black;
+}
+
+h4.secondary {
+    color: lightblue;
+}
+
+h2, a {
+    color: white;
+}
+
+p {
+    color: #999;
+}
+
+.secondary {
+    color: black;
+}
+
+h3.secondary, p.secondary2 {
+    color: white;
+    background: blue;
+    padding: 10px;
+}
+
+button {
+    color: blue;
+    padding: 10px;
+}
+
+button.secondary {
+    color: white;
+    background: blue;
+    padding: 10px;
+}

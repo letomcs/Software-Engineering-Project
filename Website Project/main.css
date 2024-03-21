@@ -63,6 +63,11 @@ nav ul {
 }
 
 /* Used in all HTML files */
+a {
+    text-decoration: none;
+}
+
+/* Used in all HTML files */
 nav ul li {
     display: inline-block;
     list-style-type: none;
@@ -71,5 +76,4 @@ nav ul li {
 /* Used in all HTML files */
 nav ul li a {
     color: white;
-    text-decoration: none;
 }

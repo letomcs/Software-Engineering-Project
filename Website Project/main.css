@@ -66,10 +66,10 @@ nav ul {
 nav ul li {
     display: inline-block;
     list-style-type: none;
-    text-decoration: none;
 }
 
 /* Used in all HTML files */
 nav ul li a {
     color: white;
+    text-decoration: none;
 }

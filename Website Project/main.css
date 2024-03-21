@@ -1,45 +1,55 @@
+/* Used in all HTML files */
 header, footer {
     font-family: arial;
     background: blue;
 }
 
+/* Used in all HTML files */
 body {
     font-family: arial;
     background: white;
 }
 
+/* Used in all HTML files */
 h1, h3, h4 { 
     color: black;
 }
 
+/* Used in the services.html */
 h4.secondary {
     color: lightblue;
 }
 
+/* Used in all HTML files */
 h2, a {
     color: white;
     text-decoration: none;
 }
 
+/* Used in all HTML files */
 p {
     color: #999;
 }
 
+/* Used for all .secondary in all HTML files */
 .secondary {
     color: black;
 }
 
+/* Used in about.html */
 h3.secondary, p.secondary2 {
     color: white;
     background: blue;
     padding: 10px;
 }
 
+/* Used in all HTML files */
 button {
     color: blue;
     padding: 10px;
 }
 
+/* Used in home.html */
 button.secondary {
     color: white;
     background: blue;

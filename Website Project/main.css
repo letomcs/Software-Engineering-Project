@@ -2,6 +2,7 @@
 header, footer {
     font-family: arial;
     background: blue;
+    margin: 0;
 }
 
 /* Used in all HTML files */
@@ -21,9 +22,8 @@ h4.secondary {
 }
 
 /* Used in all HTML files */
-h2, a {
+h2 {
     color: white;
-    text-decoration: none;
 }
 
 /* Used in all HTML files */
@@ -41,6 +41,7 @@ h3.secondary, p.secondary2 {
     color: white;
     background: blue;
     padding: 10px;
+    margin: 0;
 }
 
 /* Used in all HTML files */
@@ -54,4 +55,21 @@ button.secondary {
     color: white;
     background: blue;
     padding: 10px;
+}
+
+/* Used in all HTML files */
+nav ul {
+    margin: 0;
+}
+
+/* Used in all HTML files */
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* Used in all HTML files */
+nav ul li a {
+    color: white;
 }

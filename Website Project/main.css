@@ -3,16 +3,25 @@ header, footer {
     font-family: arial;
     background: blue;
     margin: 0;
+    padding: 10px;
 }
 
 /* Used in all HTML files */
 body {
     font-family: arial;
     background: white;
+    margin: 10;
 }
 
 /* Used in all HTML files */
-h1, h3, h4 { 
+h1 {
+    display: inline-block;
+    color: black;
+    padding: 10px;
+}
+
+/* Used in all HTML files */
+h3, h4 { 
     color: black;
     padding: 10px;
 }
@@ -56,11 +65,14 @@ button.secondary {
     color: white;
     background: blue;
     padding: 10px;
+    margin: 10px;
 }
 
 /* Used in all HTML files */
 nav ul {
     margin: 0;
+    display: inline;
+    float: right;
 }
 
 /* Used in all HTML files */
@@ -72,9 +84,23 @@ a {
 nav ul li {
     display: inline-block;
     list-style-type: none;
+    padding: 20px
 }
 
 /* Used in all HTML files */
 nav ul li a {
     color: white;
 }
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.img2 {
+    width: 300px;
+    height: 300px;
+    float: right;
+}
+
+

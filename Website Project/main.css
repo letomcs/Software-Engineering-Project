@@ -1,16 +1,19 @@
 /* Used in all HTML files */
 header, footer {
     font-family: arial;
-    background: blue;
+    background-image: url('https://www.creativefabrica.com/wp-content/uploads/2020/09/07/Modern-Blue-Web-Site-Background-Graphics-5332399-1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
     margin: 0;
     padding: 10px;
+    clear: both;
 }
 
 /* Used in all HTML files */
 body {
     font-family: arial;
     background: white;
-    margin: 10;
+    margin: 0;
 }
 
 /* Used in all HTML files */
@@ -26,8 +29,30 @@ h3, h4 {
     padding: 10px;
 }
 
-/* Used in the services.html */
+/* Used in home.html */
+h4.secondary, h3.secondary,  p.secondary {
+    padding: 10px;
+    margin: 0;
+}
+
+/* Used in home.html */
 h4.secondary {
+    font-size: 20px;
+}
+
+/* Used in home.html */
+h3.secondary {
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+/* Used in home.html */
+p.secondary {
+    line-height: 2;
+}
+
+/* Used in the services.html */
+h4.secondary2 {
     color: lightblue;
 }
 
@@ -38,7 +63,7 @@ h2 {
 
 /* Used in all HTML files */
 p {
-    color: #999;
+    color: white;
 }
 
 /* Used for all .secondary in all HTML files */
@@ -46,12 +71,40 @@ p {
     color: black;
 }
 
+
 /* Used in about.html */
-h3.secondary, p.secondary2 {
+h3.secondary2, p.secondary2 {
     color: white;
-    background: blue;
-    padding: 10px;
+    background-image: url('https://www.creativefabrica.com/wp-content/uploads/2020/09/07/Modern-Blue-Web-Site-Background-Graphics-5332399-1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
     margin: 0;
+    padding: 30px;
+}
+
+/* Used in about.html */
+h3.secondary2 {
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+/* Used in about.html */
+p.secondary2 {
+    line-height: 2;
+}
+
+
+/* Used in home.html and about.html */
+nav.secondary {
+    width: 45%;
+    margin: 40px;
+    float: right; 
+}
+
+/* Used in services.html */
+p.secondary3 {
+    color: black;
+    padding: 10px;
 }
 
 /* Used in all HTML files */
@@ -92,15 +145,52 @@ nav ul li a {
     color: white;
 }
 
+/* Used in home.html */
 img {
     width: 150px;
     height: 150px;
 }
 
+/* Used in home.html */
 .img2 {
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
     float: right;
+    display: inline;
 }
 
+/* Used in home.html */
+.img3 {
+    width: 450px;
+    height: 450px;
+    float: left; 
+    padding: 30px;
+}
+
+
+.img4 {
+    
+}
+
+/* Used in about.html */
+.img5 {
+    width: 150px;
+    height: 150px;
+}
+
+/* Used in about.html */
+.img6 {
+    width: 45%;
+    height: 45%;
+    float: left; 
+    padding: 30px;
+}
+
+.row {
+
+}
+
+.col {
+
+}
 

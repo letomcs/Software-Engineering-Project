@@ -1,11 +1,11 @@
 /* Used in all HTML files */
-header, footer {
+header {
     font-family: arial;
     background-image: url('https://www.creativefabrica.com/wp-content/uploads/2020/09/07/Modern-Blue-Web-Site-Background-Graphics-5332399-1.jpg');
     background-attachment: fixed;
     background-size: cover;
     margin: 0;
-    padding: 10px;
+    padding: 40px;
     clear: both;
 }
 
@@ -16,10 +16,20 @@ body {
     margin: 0;
 }
 
+footer {
+    font-family: arial;
+    background-image: url('https://www.creativefabrica.com/wp-content/uploads/2020/09/07/Modern-Blue-Web-Site-Background-Graphics-5332399-1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 100px;
+    clear: both;
+}
+
 /* Used in all HTML files */
 h1 {
-    display: inline-block;
-    color: black;
+    color: white;
+    font-size: 50px;
     padding: 10px;
 }
 
@@ -59,6 +69,9 @@ h4.secondary2 {
 /* Used in all HTML files */
 h2 {
     color: white;
+    font-size: 30px;
+    padding: 20px;
+   
 }
 
 /* Used in all HTML files */
@@ -111,6 +124,14 @@ p.secondary3 {
 button {
     color: blue;
     padding: 10px;
+    border-radius: 4px;
+}
+
+footer div button {
+    color: blue;
+    padding: 20px;
+    border-radius: 4px;
+    margin: 5px;
 }
 
 /* Used in home.html */
@@ -119,6 +140,7 @@ button.secondary {
     background: blue;
     padding: 10px;
     margin: 10px;
+    border-radius: 4px;
 }
 
 /* Used in all HTML files */
@@ -153,10 +175,11 @@ img {
 
 /* Used in home.html */
 .img2 {
-    width: 100px;
-    height: 100px;
+    width: 400px;
+    height: 210px;
     float: right;
-    display: inline;
+    padding: 10px;
+    margin: 0;
 }
 
 /* Used in home.html */
@@ -169,13 +192,17 @@ img {
 
 
 .img4 {
-    
+    width: 32%;
+    height: 32%;
+    float: left;
+    padding: 10px;
 }
 
 /* Used in about.html */
 .img5 {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
+    float: left;
 }
 
 /* Used in about.html */
@@ -191,6 +218,6 @@ img {
 }
 
 .col {
-
+    margin: 0;
 }
 

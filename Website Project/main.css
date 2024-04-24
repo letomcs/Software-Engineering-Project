@@ -5,7 +5,7 @@ header {
     background-attachment: fixed;
     background-size: cover;
     margin: 0;
-    padding: 40px;
+    padding: 30px;
     clear: both;
 }
 
@@ -131,22 +131,35 @@ button {
     color: blue;
     padding: 10px;
     border-radius: 4px;
+    font-size: 15px;
 }
 
 footer div button {
     color: blue;
-    padding: 20px;
+    padding: 15px;
     border-radius: 4px;
     margin: 5px;
+    font-size: 15px;
 }
 
 /* Used in home.html */
 button.secondary {
     color: white;
     background: blue;
-    padding: 10px;
+    padding: 15px;
     margin: 10px;
     border-radius: 4px;
+    font-size: 15px;
+}
+
+/* Used in home.html */
+button.secondary2 {
+    color: white;
+    background: blue;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-size: 15px;
 }
 
 /* Used in all HTML files */
@@ -165,7 +178,7 @@ a {
 nav ul li {
     display: inline-block;
     list-style-type: none;
-    padding: 20px
+    padding: 15px
 }
 
 /* Used in all HTML files */
@@ -230,11 +243,6 @@ img {
     margin-bottom: 20px; /* Adjust spacing between rows */
 }
 
-.row {
-    display: flex;
-    justify-content: center;
-}
-  
 .services-list {
     list-style-type: none;
     display: flex;
@@ -246,10 +254,6 @@ img {
     padding: 20px;
 }
   
-
-.col {
-    margin: 0;
-}
 
 @media only screen and (max-width: 400px) {
     header {
@@ -264,3 +268,36 @@ img {
         height: 90%;
     }
 }
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    display: inline-block;
+  }
+  
+  #toggle-menu {
+    display: none; /* Hide the button by default */
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 600px) {
+    .menu {
+      display: none; /* Hide the menu by default on smaller screens */
+      flex-direction: column; /* Stack menu items vertically */
+      position: absolute;
+      top: 100%; /* Position menu below button */
+      left: 0;
+      background-color: #fff; /* Background color for menu */
+      border: 1px solid #ccc; /* Border for menu */
+      padding: 10px;
+      z-index: 1; /* Ensure menu appears above other content */
+    }
+  
+    #toggle-menu {
+      display: block; /* Display the button on smaller screens */
+    }
+  }

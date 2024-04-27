@@ -6,32 +6,37 @@
     <title>Contact</title>
     <!--This allows us to create hyperlinks for the pages-->
     <link rel="stylesheet" type="text/css" href="main.css" /> 
+    <!--This allows us to display social media buttons at the bottom of the page-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
 <header> <!--The header will display the introduction to the page, links to other pages, appointment button-->
     <nav>
-        <nav>
-            <a href="home.html"><img src="https://mobilezonelumberton.com/wp-content/uploads/2023/04/cropped-Purple_Space_Phone_Free_Logo___2_-removebg-preview.png"></a>
+        <a href="home.html"><img src="https://mobilezonelumberton.com/wp-content/uploads/2023/04/cropped-Purple_Space_Phone_Free_Logo___2_-removebg-preview.png"></a>
     
-            <ul class="menu">
-                <!--These are the links that are used to take us to another page-->
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+        <ul class="menu">
+            <!--These are the links that are used to take us to another page-->
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
                 
-                <!--This is the button we will use to make appointments, will work on it more later-->
-                <button>Call Now</button>
-            </ul>
+            <!--This is the button we will use to make appointments, will work on it more later-->
+            <button>Call Now</button>
+        </ul>
     
-            <button id="toggle-menu">≡</button> <!-- Single button to toggle menu -->
+        <button id="toggle-menu">≡</button> <!-- Single button to toggle menu -->
 
-        <h1>Contact Us</h1>
+        <div>
+            <div class="col"><img src="https://mobilezonelumberton.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-10-at-9.09.58-AM-1.jpeg" class ="img8"></div>
+    
+            <h1>Contact Us</h1>
 
-        <p>Need to book an appointment or an emergency help? Get in touch with us now and our representative will help you soon.</p>
+            <p class ="intro">Need to book an appointment or an emergency help? Get in touch with us now and our representative will help you soon.</p>
+        </div>
     </nav>
 </header>
 
@@ -39,9 +44,9 @@
     <div class="row">
         <div class="left-section">
             <div class="topmargin">
-                <h4 class="secondary3">Looking for the best mobile repair in town?</h4>
-                <h3 class="secondary2">Schedule a Consultation</h3>
-                <p class="secondary2">Get in touch with us now and book your appointment or get a free consultation for the issue you are facing.</p>
+                <h4 class="back">Looking for the best mobile repair in town?</h4>
+                <h3 class="back">Schedule a Consultation</h3>
+                <p class="back">Get in touch with us now and book your appointment or get a free consultation for the issue you are facing.</p>
             </div>
         </div>
 
@@ -64,7 +69,7 @@
     <div class="row">
         <h5 class="centered">Welcome to our Shop</h5>
     </div>
-    <p class="centured">Find everything you need under one roof at our shop. Shop with ease and convenience at our well-stocked store. 
+    <p class="contact">Find everything you need under one roof at our shop. Shop with ease and convenience at our well-stocked store. 
         Experience great customer service and competitive prices when you visit us.</p>
 </div>
 
@@ -82,16 +87,44 @@
 
 <footer> <!--The footer will display the pages, phone numbers, and social media links-->
 
-    <div>
-
-        <div class="col"><img src="https://mobilezonelumberton.com/wp-content/uploads/2023/04/photo-1576613109753-27804de2cba8.jpg" class ="img4"></div>
+    <div class="container">
+        <div class="row">
+            <div class="left-section">
+                <a href="home.html"><img src="https://mobilezonelumberton.com/wp-content/uploads/2023/04/cropped-Purple_Space_Phone_Free_Logo___2_-removebg-preview.png" class ="img9"></a>
+                </form>
+            </div>
     
-    </div>
-
-    <h2>We're here to help! Call Us Today!</h2>
-    <button>📞 (409) 600-4529</button>
-    <button>📞 (409) 812-9297</button>
-
+            <div class="right-section">
+                <h2>We're here to help! Call Us Today!</h2>
+                <button class="vertical">📞 (409) 600-4529</button>
+                <button class="vertical">📞 (409) 812-9297</button>
+            </div>
+        </div>
+      </div>
+    
+      <div class="container">
+        <div class="row">
+            <div class="left-section">
+                <h6 class ="secondary">| PAGES</h6>
+                <a href="about.html"><h6>About Us</h6></a>
+                <a href="services.html"><h6>Services</h6></a>
+                <a href="contact.html"><h6>Contact Us</h6></a>
+            </form>
+            </div>
+    
+            <div class="right-section">
+                <h6 class ="secondary">| ABOUT US</h6>
+                <h6>Your one-stop shop for all your cell phone repair needs. 
+                    We specialize in fixing all types of smartphones, including iPhones, Samsung, 
+                    Huawei, LG, and more</h6>
+                <h6 class ="secondary">| SOCIAL MEDIA</h6>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+          </div>
+      </div>
+    
 </footer>
 
 </body>

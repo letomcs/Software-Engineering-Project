@@ -22,7 +22,7 @@ footer {
     background-attachment: fixed;
     background-size: cover;
     margin: 0;
-    padding: 100px;
+    padding: 30px;
     clear: both;
 }
 
@@ -46,7 +46,7 @@ h5 {
 }
 
 /* Used in home.html */
-h4.secondary, h3.secondary,  p.secondary {
+h4.home, h3.home,  p.home {
     padding: 10px;
     margin: 0;
 }
@@ -57,23 +57,25 @@ h4.secondary {
 }
 
 /* Used in home.html */
-h3.secondary {
+h3.home {
     font-size: 35px;
     font-weight: bolder;
 }
 
 /* Used in home.html */
-p.secondary {
+p.home {
     line-height: 2;
 }
 
 /* Used in the services.html */
-h4.secondary2 {
+h4.service {
     color: lightblue;
+    padding: 0 70px 0;
+    margin-bottom: 0;
 }
 
 /* Used in contact.html */
-h4.secondary3 {
+h4.back {
     color: white;
     font-size: 20px;
 }
@@ -81,35 +83,48 @@ h4.secondary3 {
 /* Used in all HTML files */
 h2 {
     color: white;
-    font-size: 30px;
-    padding: 20px;
-   
+    font-size: 45px;
 }
 
 /* Used in all HTML files */
-p {
+h6 {
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    display: block;
+}
+
+/* Used in all HTML files */
+h6.secondary {
+    font-size: 25px;
+    font-weight: bolder;
+    display: block;
+    margin-bottom: 0;
+}
+
+/* Used in all HTML files */
+p.intro {
     color: white;
 }
 
-/* Used in services.html */
-p.centured {
-    color: black;
-}
-
-/* Used for all .secondary in all HTML files */
-.secondary {
+/* Used in home.html */
+.home {
     color: black;
     margin-left: 20px;
 }
 
-/* Used in about.html */
-h3.secondary2, p.secondary2, h4.secondary3 {
+/* Used in about.html and contact.html */
+h3.back, p.back, h4.back {
     color: white;
     background-image: url('https://www.creativefabrica.com/wp-content/uploads/2020/09/07/Modern-Blue-Web-Site-Background-Graphics-5332399-1.jpg');
     background-attachment: fixed;
     background-size: cover;
     margin: 0;
-    padding: 25px 25px 10px 10px;
+    padding: 28px 28px 10px 10px;
+}
+
+p.back {
+    line-height: 1.5;
 }
 
 div.topmargin {
@@ -118,14 +133,19 @@ div.topmargin {
 }
 
 /* Used in about.html */
-h3.secondary2 {
+h3.back {
     font-size: 45px;
     font-weight: bolder;
 }
 
 /* Used in about.html */
-p.secondary2 {
+p.about {
     line-height: 2;
+}
+
+/* Used in about.html */
+p.secondary {
+    padding: 0 100px 0;
 }
 
 /* Used in home.html and about.html */
@@ -143,9 +163,16 @@ nav.secondary2 {
 }
 
 /* Used in services.html */
-p.secondary3 {
+p.service {
     color: black;
-    padding: 10px;
+    padding: 0 70px 0;
+    line-height: 1.5;
+}
+
+/* Used in contact.html */
+p.contact {
+    text-align: center;
+    padding: 0 100px 0;
 }
 
 /* Used in all HTML files */
@@ -154,6 +181,20 @@ button {
     padding: 10px;
     border-radius: 4px;
     font-size: 15px;
+}
+
+/* Used in all HTML files */
+button:hover {
+    opacity: 0.7;
+}
+
+/* Used in all HTML files */
+button.vertical {
+    color: blue;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 15px;
+    display: block;
 }
 
 /* Used in all HTML files */
@@ -213,6 +254,12 @@ nav ul li {
 /* Used in all HTML files */
 nav ul li a {
     color: white;
+    opacity: 0.7;
+}
+
+/* Used in all HTML files */
+nav ul li a:hover {
+    opacity: 2;
 }
 
 /* Used in home.html */
@@ -238,12 +285,10 @@ img {
     padding: 30px;
 }
 
-
+/* Used in about.html files */
 .img4 {
-    width: 320px;
-    height: 200px;
-    float: left;
-    padding: 10px;
+    width: 80%;
+    height: 10%;
 }
 
 /* Used in about.html */
@@ -255,10 +300,29 @@ img {
 
 /* Used in about.html */
 .img6 {
-    width: 45%;
-    height: 45%;
-    float: left; 
-    padding: 30px;
+    width: 600px;
+    height: 450px;
+}
+
+/* Used in services.html */
+.img7 {
+    width: 10%;
+    height: 10%;
+    float: left;
+    padding: 10px;
+}
+
+/* Used in contact.html */
+.img8 {
+    width: 8%;
+    height: 8%;
+    float: left;
+    padding: 10px;
+}
+
+.img9 {
+    width: 70%;
+    height: 70%;
 }
 
 .container {
@@ -351,3 +415,30 @@ img {
       display: block; /* Display the button on smaller screens */
     }
   }
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}

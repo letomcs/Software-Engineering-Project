@@ -8,6 +8,44 @@
     <link rel="stylesheet" type="text/css" href="main.css" /> 
     <!--This allows us to display social media buttons at the bottom of the page-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Basic responsiveness */
+        .container {
+            width: 90%; /* Adjust this as needed */
+            margin: 0 auto;
+            overflow: hidden; /* Clear floats */
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .left-section,
+        .right-section {
+            width: 48%; /* Adjust this as needed */
+            margin-bottom: 20px;
+        }
+
+        .left-section img,
+        .right-section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Adjustments for smaller screens */
+        @media (max-width: 820px) {
+            .container {
+                width: 100%;
+            }
+
+            .left-section,
+            .right-section {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body>

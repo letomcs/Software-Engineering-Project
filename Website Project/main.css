@@ -34,8 +34,7 @@ h1 {
 }
 
 /* Used in all HTML files */
-h3, h4 { 
-    color: black;
+h4 { 
     padding: 10px;
 }
 
@@ -114,13 +113,13 @@ p.intro {
 }
 
 /* Used in about.html and contact.html */
-h3.back, p.back, h4.back {
+.box {
     color: white;
     background-image: url('https://www.creativefabrica.com/wp-content/uploads/2020/09/07/Modern-Blue-Web-Site-Background-Graphics-5332399-1.jpg');
     background-attachment: fixed;
     background-size: cover;
-    margin: 0;
-    padding: 28px 28px 10px 10px;
+    padding: 10px;
+    margin: 10px
 }
 
 p.back {
@@ -151,6 +150,7 @@ p.secondary {
 /* Used in home.html and about.html */
 nav.secondary {
     width: 40%;
+    height: 40%;
     margin: 40px;
     float: right; 
 }
@@ -279,16 +279,16 @@ img {
 
 /* Used in home.html */
 .img3 {
-    width: 550px;
-    height: 550px;
+    width: 40%;
+    height: 100%;
     float: left; 
     padding: 30px;
 }
 
 /* Used in about.html files */
 .img4 {
-    width: 80%;
-    height: 10%;
+    width: 120%;
+    height: 100%;
 }
 
 /* Used in about.html */
@@ -300,29 +300,29 @@ img {
 
 /* Used in about.html */
 .img6 {
-    width: 600px;
-    height: 450px;
+    width: 500px;
+    height: 400px;
 }
 
 /* Used in services.html */
 .img7 {
-    width: 10%;
-    height: 10%;
+    width: 120px;
+    height: 120px;
     float: left;
     padding: 10px;
 }
 
 /* Used in contact.html */
 .img8 {
-    width: 8%;
-    height: 8%;
+    width: 100px;
+    height: 120px;
     float: left;
     padding: 10px;
 }
 
 .img9 {
-    width: 70%;
-    height: 70%;
+    width: 300px;
+    height: 300px;
 }
 
 .container {
@@ -340,12 +340,12 @@ img {
 
 .left-section {
     flex: 1;
-    margin-right: 20px;
+    margin: 10px
 }
 
 .right-section {
     flex: 1;
-    margin-left: 20px;
+    margin: 10px
 }
 
 .centered {
@@ -367,38 +367,23 @@ img {
     text-align: center;
     padding: 20px;
 }
-  
-
-@media only screen and (max-width: 400px) {
-    header {
-        width: 90%;
-        height: 90%;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    header {
-        width: 90%;
-        height: 90%;
-    }
-}
 
 .menu {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
+}
   
-  .menu li {
+.menu li {
     display: inline-block;
-  }
+}
   
-  #toggle-menu {
+#toggle-menu {
     display: none; /* Hide the button by default */
-  }
+}
   
-  /* Media query for smaller screens */
-  @media screen and (max-width: 600px) {
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
     .menu {
       display: none; /* Hide the menu by default on smaller screens */
       flex-direction: column; /* Stack menu items vertically */
@@ -414,7 +399,7 @@ img {
     #toggle-menu {
       display: block; /* Display the button on smaller screens */
     }
-  }
+}
 
 .fa {
     padding: 20px;

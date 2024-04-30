@@ -33,15 +33,11 @@ h1 {
     padding: 4px;
 }
 
-/* Used in all HTML files */
-h4 { 
-    padding: 10px;
-}
-
 h5 {
     font-size: 35px;
     text-align: center;
     margin-bottom: 0;
+    padding: 10px;
 }
 
 /* Used in home.html */
@@ -175,6 +171,17 @@ p.contact {
     padding: 0 100px 0;
 }
 
+h1.contact {
+    color: black;
+    
+    font-size: 15px
+}
+
+h2.contact {
+    color: gray;
+    font-size: 12px;
+}
+
 /* Used in all HTML files */
 button {
     color: blue;
@@ -279,10 +286,8 @@ img {
 
 /* Used in home.html */
 .img3 {
-    width: 40%;
-    height: 100%;
-    float: left; 
-    padding: 30px;
+    width: 500px;
+    height: 500px;
 }
 
 /* Used in about.html files */
@@ -309,7 +314,6 @@ img {
     width: 120px;
     height: 120px;
     float: left;
-    padding: 10px;
 }
 
 /* Used in contact.html */
@@ -365,7 +369,7 @@ img {
   
 .services-list li {
     text-align: center;
-    padding: 20px;
+    padding-right: 40px;
 }
 
 .menu {

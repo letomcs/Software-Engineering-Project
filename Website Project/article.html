@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog: Article</title>
+    <!--This allows us to create hyperlinks for the pages-->
+    <link rel="stylesheet" type="text/css" href="main.css" /> 
+    <!--This allows us to display social media buttons at the bottom of the page-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Basic responsiveness */
+        .container {
+            width: 90%; /* Adjust this as needed */
+            margin: 0 auto;
+            overflow: hidden; /* Clear floats */
+        }
+  
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+  
+        .left-section,
+        .right-section {
+            width: 48%; /* Adjust this as needed */
+            margin-bottom: 20px;
+        }
+  
+        .left-section img,
+        .right-section img {
+            max-width: 100%;
+            height: auto;
+        }
+  
+        /* Adjustments for smaller screens */
+        @media (max-width: 728px) {
+            .container {
+                width: 100%;
+            }
+  
+            .left-section .img9 {
+                align-items: center;
+                width: 100%;
+            }
+
+            .left-section,
+            .right-section {
+                width: 100%;
+            }
+  
+            .row {
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <nav>
+            <a href="home.html"><img src="https://mobilezonelumberton.com/wp-content/uploads/2023/04/cropped-Purple_Space_Phone_Free_Logo___2_-removebg-preview.png"></a>
+    
+            <ul class="menu">
+                <!--These are the links that are used to take us to another page-->
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+                <!--This is the button we will use to make appointments, will work on it more later-->
+                <button onclick="openLink(this)" value="contact.html">Call Now</button>
+            </ul>
+    
+            <button id="toggle-menu">≡</button> <!-- Single button to toggle menu -->
+
+        <h1>Acima Leasing vs. Progressive Leasing: A Comparison for Device Purchases</h1>
+        
+    </nav>
+    
+</header>
+
+<div class="centered">
+    <img src="data:image/jpeg;base64,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" class ="img10">
+</div>
+
+<p class="article">In today's tech-driven world, owning the latest devices is essential for staying connected and productive. 
+    However, for many consumers, the upfront costs of purchasing smartphones and other gadgets can be a significant barrier. 
+    To address this issue, leasing options such as Acima Leasing and Progressive Leasing have emerged as popular alternatives. 
+    In this article, we'll compare Acima Leasing and Progressive Leasing to help you make an informed decision when acquiring devices such as phones.</p>
+
+<h4 class="article">1. Approval Process</h4>
+
+<p class="article">Acima Leasing: Acima Leasing offers leasing options with no credit needed, making it accessible to a wide range of consumers, 
+    including those with less-than-perfect credit or no credit history. 
+    Instead of relying solely on credit scores, Acima considers other factors such as income and employment history to determine eligibility.</p>
+
+<p class="article">Progressive Leasing: Similarly, Progressive Leasing also provides leasing options without the need for a high credit score. 
+    However, unlike Acima, Progressive Leasing may require a down payment in some cases, depending on the retailer and the specific terms of the lease agreement.</p>  
+  
+<h4 class="article">2. Payment Flexibility</h4>
+
+<p class="article">Acima Leasing: Acima Leasing offers flexible payment options, allowing customers to choose from weekly, bi-weekly, or monthly installment plans. 
+    This flexibility enables individuals to spread out the cost of their device over time, making it more manageable and affordable.</p>
+    
+<p class="article">Progressive Leasing: Progressive Leasing also offers flexible payment terms, typically with weekly or bi-weekly payments. 
+    However, as mentioned earlier, a down payment may be required in some cases, which could affect the overall affordability for some consumers.</p>
+
+<h4 class="article">3. Retailer Partnerships</h4>
+
+<p class="article">Acima Leasing: Acima partners with a wide network of retailers, including both online and brick-and-mortar stores, 
+    to offer a diverse selection of devices. Customers can choose from the latest smartphones, tablets, and other gadgets from leading brands, 
+    knowing that they are getting quality products backed by Acima's commitment to customer satisfaction.</p>
+
+<p class="article">Progressive Leasing: Similarly, Progressive Leasing collaborates with various retailers to provide leasing options for devices. 
+    However, the availability of products and brands may vary depending on the specific retailer and their partnership with Progressive Leasing.</p>
+
+<h4 class="article">4. Application Process</h4>
+
+<p class="article">Acima Leasing: Acima's leasing process is simple and straightforward, with fast approval times and minimal paperwork. 
+    Customers can apply for a lease online or in-store, and once approved, they can quickly acquire their chosen device and begin enjoying its benefits.</p>
+
+<p class="article">Progressive Leasing: Progressive Leasing also offers a streamlined application process, typically allowing customers to apply online or in-store. 
+    However, as mentioned earlier, the requirement for a down payment may add an extra step to the process for some individuals.</p>
+ 
+<h4 class="article">**Conclusion**</h4>
+
+<p class="article">Both Acima Leasing and Progressive Leasing offer viable options for consumers looking to acquire devices such as phones without the burden of high upfront costs or stringent credit requirements. 
+    While Acima Leasing may appeal to those seeking a no-credit-needed option with maximum flexibility, Progressive Leasing could be a suitable choice for individuals who don't mind a potential down payment and are looking for a wide range of retailer options. 
+    Ultimately, the decision between Acima Leasing and Progressive Leasing will depend on your specific needs and preferences when it comes to device ownership.</p>
+
+
+<footer> <!--The footer will display the pages, phone numbers, and social media links-->
+
+    <div class="container">
+        <div class="row">
+            <div class="left-section">
+                <a href="home.html"><img src="https://mobilezonelumberton.com/wp-content/uploads/2023/04/cropped-Purple_Space_Phone_Free_Logo___2_-removebg-preview.png" class ="img9"></a>
+                </form>
+            </div>
+    
+            <div class="right-section">
+                <h2>We're here to help! Call Us Today!</h2>
+                <button class="vertical">📞 (409) 600-4529</button>
+                <button class="vertical">📞 (409) 812-9297</button>
+            </div>
+        </div>
+      </div>
+    
+      <div class="container">
+        <div class="row">
+            <div class="left-section">
+                <h6 class ="secondary">| PAGES</h6>
+                <a href="about.html"><h6>About Us</h6></a>
+                <a href="services.html"><h6>Services</h6></a>
+                <a href="contact.html"><h6>Contact Us</h6></a>
+            </form>
+            </div>
+    
+            <div class="right-section">
+                <h6 class ="secondary">| ABOUT US</h6>
+                <h6>Your one-stop shop for all your cell phone repair needs. 
+                    We specialize in fixing all types of smartphones, including iPhones, Samsung, 
+                    Huawei, LG, and more</h6>
+                <h6 class ="secondary">| SOCIAL MEDIA</h6>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+          </div>
+      </div>
+    
+</footer>
+<script src="main.js"></script>
+
+</body>
+
+</html>

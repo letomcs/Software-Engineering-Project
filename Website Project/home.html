@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Zone</title>
+    <title>Mobile Zone: Home Page</title>
     <!--This allows us to create hyperlinks for the pages-->
     <link rel="stylesheet" type="text/css" href="main.css" /> 
     <!--This allows us to display social media buttons at the bottom of the page-->
@@ -60,6 +60,10 @@
           .services-list {
               display: inline-block;
           }
+
+          .img2 {
+              padding-right: 65px;
+          }
       }
   </style>
 </head>
@@ -79,7 +83,7 @@
             <li><a href="contact.html">Contact</a></li>
             
             <!--This is the button we will use to make appointments, will work on it more later-->
-            <button>Call Now</button>
+            <button onclick="openLink(this)" value="contact.html">Call Now</button>
         </ul>
 
         <button id="toggle-menu">≡</button> <!-- Single button to toggle menu -->
@@ -92,7 +96,7 @@
 
             <p class="intro">Your one-stop shop for all your electronics needs. We BUY-SELL-REPAIR-UNLOCK</p>
     
-            <button>Request a Callback →</button>
+            <button onclick="openLink(this)" value="contact.html">Request a Callback →</button>
 
         </div>
 
@@ -113,7 +117,7 @@
           <h3 class="home">A Team of Expert Mobile Repair Professionals for Comprehensive Onsite Services.</h3>
           <p class="home">Welcome to Mobile Zone, your one-stop-shop for all your mobile repair needs. 
             With over 10 years of experience in the industry, we have become one of the most trusted and reliable mobile repair shops in town.</p>
-          <button class="secondary">Know More About Us →</button>
+            <button class="secondary" onclick="openLink(this)" value = "about.html">Know More About Us →</button>
         </div>
       </div>
 
@@ -150,7 +154,7 @@
   </div>
 
 <div class="container">
-  <button class ="secondary2">View All Services →</button>
+  <button class ="secondary2" onclick = "openLink(this)" value = "services.html">View All Services →</button>
 </div>
   
     
@@ -195,6 +199,7 @@
   </div>
 
 </footer>
+<script src="main.js"></script>
 
 </body>
 

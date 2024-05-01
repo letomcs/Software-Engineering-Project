@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Mobile Zone: Blog Page</title>
     <!--This allows us to create hyperlinks for the pages-->
     <link rel="stylesheet" type="text/css" href="main.css" /> 
     <!--This allows us to display social media buttons at the bottom of the page-->
@@ -41,16 +41,17 @@
             }
   
             .left-section .img9 {
-              align-items: center;
-              width: 100%;
-            }
-            
-            .left-section,
-            .right-section {
-                width: 95%;
                 align-items: center;
+                width: 100%;
             }
 
+         
+
+            .left-section,
+            .right-section {
+                width: 100%;
+            }
+  
             .row {
                 display: inline-block;
             }
@@ -60,96 +61,39 @@
 
 <body>
 
-<header> <!--The header will display the introduction to the page, links to other pages, appointment button-->
+<header>
     <nav>
-        <a href="home.html"><img src="https://mobilezonelumberton.com/wp-content/uploads/2023/04/cropped-Purple_Space_Phone_Free_Logo___2_-removebg-preview.png"></a>
+        <nav>
+            <a href="home.html"><img src="https://mobilezonelumberton.com/wp-content/uploads/2023/04/cropped-Purple_Space_Phone_Free_Logo___2_-removebg-preview.png"></a>
+    
+            <ul class="menu">
+                <!--These are the links that are used to take us to another page-->
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+                <!--This is the button we will use to make appointments, will work on it more later-->
+                <button onclick="openLink(this)" value="contact.html">Call Now</button>
+            </ul>
+    
+            <button id="toggle-menu">≡</button> <!-- Single button to toggle menu -->
 
-        <ul class="menu">
-            <!--These are the links that are used to take us to another page-->
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            
-            <!--This is the button we will use to make appointments, will work on it more later-->
-            <button>Call Now</button>
-        </ul>
-
-        <button id="toggle-menu">≡</button> <!-- Single button to toggle menu -->
-        
-        <div>
-            <div class="col"><img src="https://mobilezonelumberton.com/wp-content/uploads/2023/04/IMG_8826.png" class ="img5"></div>
-
-            <h1>About Us</h1>
-
-            <p class ="intro">With a decade of experience in mobile repair services, our team of skilled professionals delivers exceptional quality and speedy repairs.</p>
-        </div>
+        <h1>Blog</h1>
     </nav>
 </header>
 
-<div class="container">
-    <div class="row">
-        <div class="left-section">
-            <div class="topmargin">
-                <img src="https://mobilezonelumberton.com/wp-content/uploads/elementor/thumbs/press_release_distribution_0497927_187422-q4iidrgc0fl3x6m2whh5t824jatedccdaiw3iaed8c.jpg" class ="img6">
-            </div>
-        </div>
-    
-        <div class="right-section">
-            <div class="box">
-                <h3 class="back">We Solve, Mobile Repair with the Most Efficiency</h3>
-                <p class="back">When it comes to mobile repair, efficiency is key. 
-                    At Mobile Zone, we prioritize speed and accuracy in all of our repairs, ensuring that your device is back in your hands as soon as possible. 
-                    Our experienced technicians use state-of-the-art equipment and techniques to diagnose and fix any issues with your mobile device. 
-                    We also offer a convenient mobile repair service, where we can come to you and complete the repair on-site. 
-                    With We Solve, you can trust that your mobile device is in good hands and will be repaired with the utmost efficiency.</p>
-                </div>
-            </form>
-        </div>
-    </div>
+<div class="TNR">
+    <h5 class="centered">Latest Posts</h5>
 
-    <div class="row">
-        <h5 class="centered">Welcome to Mobile Zone</h5>
-    </div>
-        <p class="secondary">Your one-stop shop for all your cell phone repair needs. 
-            We specialize in fixing all types of smartphones, including iPhones, Samsung, Huawei, LG, and more. 
-            Our experienced technicians have the expertise and equipment to handle any repair, 
-            from screen replacements and battery replacements to more complex repairs such as water damage and software issues.</p>
-
-        <p class ="secondary">Our services are affordable and fast, with most repairs taking only a few hours. 
-            Our prices are transparent, and you can find a full list of our services and pricing on our website. 
-            You can even book an appointment online to ensure a hassle-free experience.</p>
-
-        <p class ="secondary">At Mobile Zone, we are dedicated to providing the best possible customer experience. 
-            Our technicians are highly qualified and certified, and we use only the best replacement parts for our repairs. 
-            We stand behind our work and offer a warranty on all repairs.</p>
-
-        <p class ="secondary">Our FAQ section provides answers to common questions about cell phone repair, 
-            and our blog is a great resource for tips and advice on maintaining and troubleshooting your device. 
-            If you have any questions or concerns, please don’t hesitate to contact us. Our team is always available to assist you.</p>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="left-section">
-            <div class ="box">
-                <h3 class="back">Why Choose Us?</h3>
-                <p class="back">We show you our appreciation by going above and beyond, 
-                    ensuring a flawless experience. We can be your top choice today!</p>
-                <p class="back">✔ Highly qualified staff</p>
-                <p class="back">✔ Honest and flat-rate pricing</p>
-                <p class="back">✔ 100% satisfaction guaranteed</p>
-                <p class="back">✔ Wide service area</p>
-                <p class="back">✔ On-demand emergency services</p>
-            </div>
-            </form>
-        </div>
-
-        <div class="right-section">
-            <img src="https://mobilezonelumberton.com/wp-content/uploads/elementor/thumbs/photo-1576613109753-27804de2cba8-q4hr71xyqp0tsra9rcc4290or02igvbeym9t2v0pmo.jpg" class ="img4">
-        </div>
+    <div class="centered">
+        <li>
+        <a href="article.html">
+            <img src="data:image/jpeg;base64,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" alt="Acima Leasing vs. Progressive Leasing: A Comparison for Device Purchases" class ="img10">
+            <h4 class="blog">Acima Leasing vs. Progressive Leasing: A Comparison for Device Purchases</h4>
+        </a>
+        </li>
     </div>
 </div>
 
@@ -161,16 +105,16 @@
                 <a href="home.html"><img src="https://mobilezonelumberton.com/wp-content/uploads/2023/04/cropped-Purple_Space_Phone_Free_Logo___2_-removebg-preview.png" class ="img9"></a>
                 </form>
             </div>
-
+    
             <div class="right-section">
                 <h2>We're here to help! Call Us Today!</h2>
                 <button class="vertical">📞 (409) 600-4529</button>
                 <button class="vertical">📞 (409) 812-9297</button>
             </div>
         </div>
-    </div>
-
-    <div class="container">
+      </div>
+    
+      <div class="container">
         <div class="row">
             <div class="left-section">
                 <h6 class ="secondary">| PAGES</h6>
@@ -192,8 +136,9 @@
             </div>
           </div>
       </div>
-
+    
 </footer>
+<script src="main.js"></script>
 
 </body>
 

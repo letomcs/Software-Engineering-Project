@@ -1,473 +1,209 @@
-/* Used in all HTML files */
-header {
-    font-family: arial;
-    background-image: url('https://www.creativefabrica.com/wp-content/uploads/2020/09/07/Modern-Blue-Web-Site-Background-Graphics-5332399-1.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    margin: 0;
-    padding: 30px;
-    clear: both;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Zone: About Page</title>
+    <!--This allows us to create hyperlinks for the pages-->
+    <link rel="stylesheet" type="text/css" href="main.css" /> 
+    <!--This allows us to display social media buttons at the bottom of the page-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <style>
+        /* Basic responsiveness */
+        .container {
+            width: 90%; /* Adjust this as needed */
+            margin: 0 auto;
+            overflow: hidden; /* Clear floats */
+        }
+  
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+  
+        .left-section,
+        .right-section {
+            width: 48%; /* Adjust this as needed */
+            margin-bottom: 20px;
+        }
+  
+        .left-section img,
+        .right-section img {
+            max-width: 100%;
+            height: auto;
+        }
+  
+        /* Adjustments for smaller screens */
+        @media (max-width: 728px) {
+            .container {
+                width: 100%;
+            }
+  
+            .left-section .img9 {
+              align-items: center;
+              width: 100%;
+            }
+            
+            .left-section,
+            .right-section {
+                width: 95%;
+                align-items: center;
+            }
 
-/* Used in all HTML files */
-body {
-    font-family: arial;
-    background: white;
-    margin: 0;
-}
+            .row {
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
 
-footer {
-    font-family: arial;
-    background-image: url('https://www.creativefabrica.com/wp-content/uploads/2020/09/07/Modern-Blue-Web-Site-Background-Graphics-5332399-1.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    margin: 0;
-    padding: 30px;
-    clear: both;
-}
+<body>
 
-/* Used in all HTML files */
-h1 {
-    color: white;
-    font-size: 50px;
-    padding: 4px;
-}
+<header> <!--The header will display the introduction to the page, links to other pages, appointment button-->
+    <nav>
+        <a href="home.html"><img src="https://mobilezonelumberton.com/wp-content/uploads/2023/04/cropped-Purple_Space_Phone_Free_Logo___2_-removebg-preview.png"></a>
 
-h5 {
-    font-size: 35px;
-    text-align: center;
-    margin-bottom: 0;
-    padding: 10px;
-}
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
 
-/* Used in home.html */
-h4.home, h3.home,  p.home {
-    padding: 10px;
-    margin: 0;
-}
+        <ul class="menu">
+            <!--These are the links that are used to take us to another page-->
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+            <!--This is the button we will use to make appointments, will work on it more later-->
+            <button onclick="openLink(this)" value="contact.html">Call Now</button>
+        </ul>
+        
+        <div>
+            <div class="col"><img src="https://mobilezonelumberton.com/wp-content/uploads/2023/04/IMG_8826.png" class ="img5"></div>
 
-/* Used in home.html */
-h4.secondary {
-    font-size: 20px;
-}
+            <h1>About Us</h1>
 
-/* Used in home.html */
-h3.home {
-    font-size: 35px;
-    font-weight: bolder;
-}
+            <p class ="intro">With a decade of experience in mobile repair services, our team of skilled professionals delivers exceptional quality and speedy repairs.</p>
+        </div>
+    </nav>
+</header>
 
-/* Used in home.html */
-p.home {
-    line-height: 2;
-}
-
-/* Used in the services.html */
-h4.service {
-    color: lightblue;
-    padding: 0 70px 0;
-    margin-bottom: 0;
-}
-
-/* Used in the blog.html */
-h4.blog{
-    color: black;
-    padding: 10px;
-    margin-top: 0;
-    margin-bottom: 50px;
-    font-weight: bolder;
-}
-
-/* Used in the article.html */
-h4.article {
-    color: darkblue;
-    padding: 0 70px 0;
-    margin-bottom: 0;
-}
-
-/* Used in contact.html */
-h4.back {
-    color: white;
-    font-size: 20px;
-}
-
-/* Used in all HTML files */
-h2 {
-    color: white;
-    font-size: 45px;
-}
-
-/* Used in all HTML files */
-h6 {
-    color: white;
-    font-size: 15px;
-    font-weight: bolder;
-    display: block;
-}
-
-/* Used in all HTML files */
-h6.secondary {
-    font-size: 25px;
-    font-weight: bolder;
-    display: block;
-    margin-bottom: 0;
-}
-
-/* Used in all HTML files */
-p.intro {
-    color: white;
-}
-
-/* Used in home.html */
-.home {
-    color: black;
-    margin-left: 20px;
-}
-
-/* Used in about.html and contact.html */
-.box {
-    color: white;
-    background-image: url('https://www.creativefabrica.com/wp-content/uploads/2020/09/07/Modern-Blue-Web-Site-Background-Graphics-5332399-1.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    padding: 10px;
-    margin: 10px
-}
-
-p.back {
-    line-height: 1.5;
-}
-
-div.topmargin {
-    margin-top: 10px;
-    padding: 30px;
-}
-
-/* Used in about.html */
-h3.back {
-    font-size: 45px;
-    font-weight: bolder;
-}
-
-/* Used in about.html */
-p.about {
-    line-height: 2;
-}
-
-/* Used in about.html */
-p.secondary {
-    padding: 0 100px 0;
-}
-
-/* Used in home.html and about.html */
-nav.secondary {
-    width: 40%;
-    height: 40%;
-    margin: 40px;
-    float: right; 
-}
-
-/* Used in home.html and about.html */
-nav.secondary2 {
-    width: 40%;
-    margin: 40px;
-    float: left; 
-}
-
-/* Used in services.html */
-p.service {
-    color: black;
-    padding: 0 70px 0;
-    line-height: 1.5;
-}
-
-/* Used in contact.html */
-p.contact {
-    text-align: center;
-    padding: 0 100px 0;
-}
-
-/* Used in article.html */
-p.article {
-    color: black;
-    padding: 0 70px 0;
-    line-height: 1.5;
-    font-size: 20px;
-}
-
-h1.contact {
-    color: black;
+<div class="container">
+    <div class="row">
+        <div class="left-section">
+            <div class="topmargin">
+                <img src="https://mobilezonelumberton.com/wp-content/uploads/elementor/thumbs/press_release_distribution_0497927_187422-q4iidrgc0fl3x6m2whh5t824jatedccdaiw3iaed8c.jpg" class ="img6">
+            </div>
+        </div>
     
-    font-size: 15px
-}
+        <div class="right-section">
+            <div class="box">
+                <h3 class="back">We Solve, Mobile Repair with the Most Efficiency</h3>
+                <p class="back">When it comes to mobile repair, efficiency is key. 
+                    At Mobile Zone, we prioritize speed and accuracy in all of our repairs, ensuring that your device is back in your hands as soon as possible. 
+                    Our experienced technicians use state-of-the-art equipment and techniques to diagnose and fix any issues with your mobile device. 
+                    We also offer a convenient mobile repair service, where we can come to you and complete the repair on-site. 
+                    With We Solve, you can trust that your mobile device is in good hands and will be repaired with the utmost efficiency.</p>
+                </div>
+            </form>
+        </div>
+    </div>
 
-h2.contact {
-    color: gray;
-    font-size: 12px;
-}
+    <div class="row">
+        <h5 class="centered">Welcome to Mobile Zone</h5>
+    </div>
+        <p class="secondary">Your one-stop shop for all your cell phone repair needs. 
+            We specialize in fixing all types of smartphones, including iPhones, Samsung, Huawei, LG, and more. 
+            Our experienced technicians have the expertise and equipment to handle any repair, 
+            from screen replacements and battery replacements to more complex repairs such as water damage and software issues.</p>
 
-/* Used in all HTML files */
-button {
-    color: blue;
-    padding: 10px;
-    border-radius: 4px;
-    font-size: 15px;
-}
+        <p class ="secondary">Our services are affordable and fast, with most repairs taking only a few hours. 
+            Our prices are transparent, and you can find a full list of our services and pricing on our website. 
+            You can even book an appointment online to ensure a hassle-free experience.</p>
 
-/* Used in all HTML files */
-button:hover {
-    opacity: 0.7;
-}
+        <p class ="secondary">At Mobile Zone, we are dedicated to providing the best possible customer experience. 
+            Our technicians are highly qualified and certified, and we use only the best replacement parts for our repairs. 
+            We stand behind our work and offer a warranty on all repairs.</p>
 
-/* Used in all HTML files */
-button.vertical {
-    color: blue;
-    padding: 10px;
-    border-radius: 4px;
-    font-size: 15px;
-    display: block;
-}
+        <p class ="secondary">Our FAQ section provides answers to common questions about cell phone repair, 
+            and our blog is a great resource for tips and advice on maintaining and troubleshooting your device. 
+            If you have any questions or concerns, please don’t hesitate to contact us. Our team is always available to assist you.</p>
+    </div>
+</div>
 
-/* Used in all HTML files */
-footer div button {
-    color: blue;
-    padding: 15px;
-    border-radius: 4px;
-    margin: 5px;
-    font-size: 15px;
-}
+<div class="container">
+    <div class="row">
+        <div class="left-section">
+            <div class ="box">
+                <h3 class="back">Why Choose Us?</h3>
+                <p class="back">We show you our appreciation by going above and beyond, 
+                    ensuring a flawless experience. We can be your top choice today!</p>
+                <p class="back">✔ Highly qualified staff</p>
+                <p class="back">✔ Honest and flat-rate pricing</p>
+                <p class="back">✔ 100% satisfaction guaranteed</p>
+                <p class="back">✔ Wide service area</p>
+                <p class="back">✔ On-demand emergency services</p>
+            </div>
+            </form>
+        </div>
 
-/* Used in contact.html */
-div.secondary {
-    padding: 10px;
-    margin: 0;
-}
+        <div class="right-section">
+            <img src="https://mobilezonelumberton.com/wp-content/uploads/elementor/thumbs/photo-1576613109753-27804de2cba8-q4hr71xyqp0tsra9rcc4290or02igvbeym9t2v0pmo.jpg" class ="img4">
+        </div>
+    </div>
+</div>
 
-/* Used in home.html */
-button.secondary {
-    color: white;
-    background: blue;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 4px;
-    font-size: 15px;
-}
+<footer> <!--The footer will display the pages, phone numbers, and social media links-->
 
-/* Used in home.html */
-button.secondary2 {
-    color: white;
-    background: blue;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 4px;
-    font-size: 15px;
-}
+    <div class="container">
+        <div class="row">
+            <div class="left-section">
+                <a href="home.html"><img src="https://mobilezonelumberton.com/wp-content/uploads/2023/04/cropped-Purple_Space_Phone_Free_Logo___2_-removebg-preview.png" class ="img9"></a>
+                </form>
+            </div>
 
-/* Used in all HTML files */
-nav ul {
-    margin: 0;
-    display: inline;
-    float: right;
-}
+            <div class="right-section">
+                <h2>We're here to help! Call Us Today!</h2>
+                <button class="vertical" onclick="callNumber('4096004529')">📞 (409) 600-4529</button>
+                <button class="vertical" onclick="callNumber('4098129297')">📞 (409) 812-9297</button>
+            </div>
+        </div>
+    </div>
 
-/* Used in all HTML files */
-a {
-    text-decoration: none;
-}
+    <div class="container">
+        <div class="row">
+            <div class="left-section">
+                <h6 class ="secondary">| PAGES</h6>
+                <a href="about.html"><h6>About Us</h6></a>
+                <a href="services.html"><h6>Services</h6></a>
+                <a href="contact.html"><h6>Contact Us</h6></a>
+            </form>
+            </div>
+    
+            <div class="right-section">
+                <h6 class ="secondary">| ABOUT US</h6>
+                <h6>Your one-stop shop for all your cell phone repair needs. 
+                    We specialize in fixing all types of smartphones, including iPhones, Samsung, 
+                    Huawei, LG, and more</h6>
+                <h6 class ="secondary">| SOCIAL MEDIA</h6>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+          </div>
+      </div>
 
-/* Used in all HTML files */
-nav ul li {
-    display: inline-block;
-    list-style-type: none;
-    padding: 15px
-}
-
-/* Used in all HTML files */
-nav ul li a {
-    color: white;
-    opacity: 0.7;
-}
-
-/* Used in all HTML files */
-nav ul li a:hover {
-    opacity: 2;
-}
-
-/* Used in home.html */
-img {
-    width: 150px;
-    height: 150px;
-}
-
-/* Used in home.html */
-.img2 {
-    width: 301px;
-    height: 201px;
-    float: right;
-    padding: 10px;
-    margin: 0;
-}
-
-/* Used in home.html */
-.img3 {
-    width: 500px;
-    height: 500px;
-}
-
-/* Used in about.html files */
-.img4 {
-    width: 120%;
-    height: 100%;
-}
-
-/* Used in about.html */
-.img5 {
-    width: 120px;
-    height: 120px;
-    float: left;
-}
-
-/* Used in about.html */
-.img6 {
-    width: 500px;
-    height: 400px;
-}
-
-/* Used in services.html */
-.img7 {
-    width: 120px;
-    height: 120px;
-    float: left;
-    padding: 10px;
-}
-
-/* Used in contact.html */
-.img8 {
-    width: 100px;
-    height: 120px;
-    float: left;
-    padding: 10px;
-}
-
-.img9 {
-    width: 300px;
-    height: 300px;
-}
-
-.img10 {
-    width: 400px;
-    height: 300px;
-    margin-top: 50px;
-}
-
-.TNR {
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.left-section {
-    flex: 1;
-    margin: 10px
-}
-
-.right-section {
-    flex: 1;
-    margin: 10px
-}
-
-.centered {
-    text-align: center;
-    align-items: center;
-}
-
-.centered li {
-    list-style-type: none;
-}
-  
-.content {
-    display: flex;
-    margin-bottom: 20px; /* Adjust spacing between rows */
-}
-
-.services-list {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around; /* Adjust alignment of items within the row */
-}
-  
-.services-list li {
-    text-align: center;
-    padding-right: 40px;
-}
-
-.menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-  
-.menu li {
-    display: inline-block;
-}
-  
-#toggle-menu {
-    display: none; /* Hide the button by default */
-}
-  
-/* Media query for smaller screens */
-@media screen and (max-width: 600px) {
-    .menu {
-      display: none; /* Hide the menu by default on smaller screens */
-      flex-direction: column; /* Stack menu items vertically */
-      position: absolute;
-      top: 100%; /* Position menu below button */
-      left: 0;
-      background-color: #fff; /* Background color for menu */
-      border: 1px solid #ccc; /* Border for menu */
-      padding: 10px;
-      z-index: 1; /* Ensure menu appears above other content */
+</footer>
+<script src="main.js"></script>
+<script>
+    function callNumber(phoneNumber) {
+        window.location.href = "tel:+" + phoneNumber;
     }
-  
-    #toggle-menu {
-      display: block; /* Display the button on smaller screens */
-    }
-}
+</script>
+</body>
 
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
-
-.fa-instagram {
-    background: #125688;
-    color: white;
-}
+</html>

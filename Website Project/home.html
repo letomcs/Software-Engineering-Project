@@ -7,7 +7,8 @@
     <!--This allows us to create hyperlinks for the pages-->
     <link rel="stylesheet" type="text/css" href="main.css" /> 
     <!--This allows us to display social media buttons at the bottom of the page-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
       /* Basic responsiveness */
       .container {
@@ -74,6 +75,11 @@
     <nav>
         <a href="home.html"><img src="https://mobilezonelumberton.com/wp-content/uploads/2023/04/cropped-Purple_Space_Phone_Free_Logo___2_-removebg-preview.png"></a>
         
+        <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+
         <ul class="menu">
             <!--These are the links that are used to take us to another page-->
             <li><a href="home.html">Home</a></li>
@@ -84,12 +90,9 @@
             
             <!--This is the button we will use to make appointments, will work on it more later-->
             <button onclick="openLink(this)" value="contact.html">Call Now</button>
-        </ul>
-
-        <button id="toggle-menu">≡</button> <!-- Single button to toggle menu -->
+          </ul>
 
         <div>
-
             <div class="col"><img src="https://mobilezonelumberton.com/wp-content/uploads/2023/04/gulshan-iphone-repair-service-gorakhpur-city-gorakhpur-mobile-phone-repair-and-services-ik8o4satc9-1.webp" class ="img2"></div>
 
             <h1>Welcome to Mobile Zone</h1>
@@ -97,9 +100,7 @@
             <p class="intro">Your one-stop shop for all your electronics needs. We BUY-SELL-REPAIR-UNLOCK</p>
     
             <button onclick="openLink(this)" value="contact.html">Request a Callback →</button>
-
         </div>
-
     </nav>
 </header>
 
@@ -168,10 +169,10 @@
         </div>
 
         <div class="right-section">
-            <h2>We're here to help! Call Us Today!</h2>
-            <button class="vertical">📞 (409) 600-4529</button>
-            <button class="vertical">📞 (409) 812-9297</button>
-        </div>
+          <h2>We're here to help! Call Us Today!</h2>
+          <button class="vertical" onclick="callNumber('4096004529')">📞 (409) 600-4529</button>
+          <button class="vertical" onclick="callNumber('4098129297')">📞 (409) 812-9297</button>
+      </div>
     </div>
   </div>
 
@@ -200,7 +201,11 @@
 
 </footer>
 <script src="main.js"></script>
-
+<script>
+  function callNumber(phoneNumber) {
+      window.location.href = "tel:+" + phoneNumber;
+  }
+</script>
 </body>
 
 </html>

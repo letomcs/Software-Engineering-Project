@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Zone: Services Page</title>
+    <title>Mobile Zone: Contact Page</title>
     <!--This allows us to create hyperlinks for the pages-->
     <link rel="stylesheet" type="text/css" href="main.css" /> 
     <!--This allows us to display social media buttons at the bottom of the page-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <style>
         /* Basic responsiveness */
         .container {
@@ -34,6 +35,12 @@
             height: auto;
         }
   
+        .left-section iframe,
+        .right-section iframe {
+            max-width: 100%;
+            max-height: 60%;
+        }
+  
         /* Adjustments for smaller screens */
         @media (max-width: 728px) {
             .container {
@@ -47,9 +54,10 @@
 
             .left-section,
             .right-section {
-                width: 100%;
+                width: 95%;
+                align-items: center;
             }
-
+            
             .row {
                 display: inline-block;
             }
@@ -62,6 +70,11 @@
 <header> <!--The header will display the introduction to the page, links to other pages, appointment button-->
     <nav>
         <a href="home.html"><img src="https://mobilezonelumberton.com/wp-content/uploads/2023/04/cropped-Purple_Space_Phone_Free_Logo___2_-removebg-preview.png"></a>
+    
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
 
         <ul class="menu">
             <!--These are the links that are used to take us to another page-->
@@ -70,71 +83,76 @@
             <li><a href="services.html">Services</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
-            
+                
             <!--This is the button we will use to make appointments, will work on it more later-->
             <button onclick="openLink(this)" value="contact.html">Call Now</button>
         </ul>
 
-        <button id="toggle-menu">≡</button> <!-- Single button to toggle menu -->
-    
         <div>
-            <div class="col"><img src="https://mobilezonelumberton.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-10-at-9.09.58-AM.jpeg" class ="img7"></div>
+            <div class="col"><img src="https://mobilezonelumberton.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-10-at-9.09.58-AM-1.jpeg" class ="img8"></div>
+    
+            <h1>Contact Us</h1>
 
-            <h1>Services We Offer</h1>
-
-            <p class ="intro">We provide professional and reliable mobile repair services for all types of smartphone models and brands.</p>
+            <p class ="intro">Need to book an appointment or an emergency help? Get in touch with us now and our representative will help you soon.</p>
         </div>
     </nav>
 </header>
 
-<h5 class ="centered">Our Services</div>
+<div class="container">
+    <div class="row">
+        <div class="left-section">
+            <div class="topmargin">
+                <div class="box">
+                    <h4 class="back">Looking for the best mobile repair in town?</h4>
+                    <h3 class="back">Schedule a Consultation</h3>
+                    <p class="back">Get in touch with us now and book your appointment or get a free consultation for the issue you are facing.</p>
+                </div>
+            </div>
+        </div>
 
-<h4 class="service">Cell Phone Repair</h4>
+        <div class="right-section">
+            <div class="box">
+                <h3 class="secondary">Send Us A Message</h3>
+                <form action="/action_page.php">
+                    <label for="fname">First name: </label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Last name: </label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <label for="email">Email Address: </label>
+                    <input type="text" id="email" name="email"><br><br>
+                    <label for="message">Your Message: </label>
+                    <input type="text" id="message" name="message"><br><br>
+                    <button class="secondary">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <h5 class="centered">Welcome to our Shop</h5>
+    </div>
+    <p class="contact">Find everything you need under one roof at our shop. Shop with ease and convenience at our well-stocked store. 
+        Experience great customer service and competitive prices when you visit us.</p>
+</div>
 
-    <p class="service">At Mobile Zone, we understand the importance of having a functional phone in today’s connected world. 
-        That’s why we offer fast and reliable cell phone repair services to get your device back in working order as soon as possible. 
-        Our team of experienced technicians uses the latest tools and techniques to diagnose and repair your phone, ensuring a high-quality result.</p>
+<div class="container">
+    <div class="row">
+        <div class="left-section">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6904.927919314931!2d-94.17599491071049!3d30.08089611020044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x863eccb81ae3fc73%3A0x37d568137e15f919!2sMobile%20Zone%20Beaumont%20-%20Phones%20%26%20Repair!5e0!3m2!1sen!2sus!4v1714025192304!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+            <h1 class="contact">YOU CAN REACH US THROUGH MOBILE ZONE BEAUMONT</h3>
+            <h2 class="contact">➤  550 Dowlen Rd, Beaumont, TX 77706</h2>
+            <h2 class="contact">📞 (409) 600-4529</h2>
+            <h2 class="contact">🕓  Open from 9am-9pm from Monday to Saturday. On Sunday, we are open from 12pm-6:30pm</h2>
+        </div>
 
-    <p class="service">We use only the best replacement parts for our repairs and offer a warranty on all of our work, 
-        giving you peace of mind that your phone is in good hands. 
-        Our prices are transparent and competitive, and we always keep you informed throughout the repair process. 
-        We believe in putting the customer first and providing excellent customer service, 
-        so you can be confident that you are making the right choice when you choose Mobile Zone for your cell phone repair needs.</p>
-    
-<h4 class="service">Pre-Owned Phones</h4>
-
-    <p class="service">Mobile Zone is a trusted source for buying and selling used cell phones. 
-        We have been in the business for many years and have established a reputation for providing high-quality devices at affordable prices. 
-        Our team of experts tests and thoroughly inspects each phone to ensure that it is in good working condition before we offer it for sale.</p>
-
-    <p class="service">We are committed to providing an exceptional customer experience and ensuring that every customer leaves our store happy with their purchase. 
-        Our knowledgeable staff is always available to answer questions and help you find the perfect phone for your needs. 
-        We offer a wide selection of popular models from top brands, including iPhones, Samsung, Huawei, and more.</p>
-
-    <p class="service">At Mobile Zone, we believe in being transparent about the condition of our phones, so you can make an informed purchase. 
-        We provide detailed descriptions and photos of each device, so you know exactly what you’re getting. 
-        We also offer a 30-day warranty on all of our used phones, giving you added peace of mind.</p>
-
-    <p class="service">In addition to our used phone sales, we also offer repair services for a wide range of devices. 
-        Our technicians are highly trained and use only the best replacement parts to ensure a quality repair. 
-        If you’re looking for an affordable, reliable, and hassle-free way to buy or repair your phone, 
-        look no further than Mobile Zone. We look forward to serving you soon!</p>
-
-<h4 class="service">Accessories</h4>
-        
-    <p class="service">Discover the latest and greatest cell phone accessories at our store! 
-        From protective cases to chargers, headphones to screen protectors, we have everything you need to enhance your mobile experience. 
-        Our selection features top-quality products from the most trusted brands in the industry, all at unbeatable prices. 
-        Whether you’re looking to protect your phone, improve its functionality, or simply add some style, our knowledgeable staff is here to help you find the perfect accessory. 
-        Visit us today and see why we are the go-to destination for all your cellphone needs!”</p>
-
-<h4 class="service">Unlocking</h4>
-
-    <p class="service">Unlock the full potential of your phone with our professional unlocking services! 
-        Our store offers fast, reliable, and affordable phone unlocking services for all major brands. 
-        Whether you’re switching carriers, traveling internationally, or simply forgetting the password to get in, our team of experts will unlock your phone safely and efficiently. 
-        With our simple process, you can have your phone unlocked in no time. We pride ourselves on our exceptional customer service and commitment to your satisfaction. 
-        Visit us today and enjoy the freedom that comes with an unlocked phone!</p>
+        <div class="right-section">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d861.7251281106652!2d-94.19586617018227!3d30.239913454405304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8639315a6b4e7337%3A0xe1f7d2e96ff0016a!2sMobile%20Zone%20Lumberton%20-%20Phone%20Repair%20%2F%20Sale!5e0!3m2!1sen!2sus!4v1714025290606!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+            <h1 class="contact">YOU CAN REACH US THROUGH MOBILE ZONE LUMBERTON</h3>
+            <h2 class="contact">➤   1037 S Main St, Lumberton, Texas 77657</h2>
+            <h2 class="contact">📞  (409) 812-9297</h2>
+            <h2 class="contact">🕓  From Monday to Saturday 10am to 8pm. Sunday 12pm to 6:30pm.</h2>
+        </div>
+    </div>
+</div>
 
 <footer> <!--The footer will display the pages, phone numbers, and social media links-->
 
@@ -147,8 +165,8 @@
     
             <div class="right-section">
                 <h2>We're here to help! Call Us Today!</h2>
-                <button class="vertical">📞 (409) 600-4529</button>
-                <button class="vertical">📞 (409) 812-9297</button>
+                <button class="vertical" onclick="callNumber('4096004529')">📞 (409) 600-4529</button>
+                <button class="vertical" onclick="callNumber('4098129297')">📞 (409) 812-9297</button>
             </div>
         </div>
       </div>
@@ -178,7 +196,11 @@
     
 </footer>
 <script src="main.js"></script>
-
+<script>
+    function callNumber(phoneNumber) {
+        window.location.href = "tel:+" + phoneNumber;
+    }
+</script>
 </body>
 
 </html>

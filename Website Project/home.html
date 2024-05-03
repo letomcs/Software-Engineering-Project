@@ -7,8 +7,8 @@
     <!--This allows us to create hyperlinks for the pages-->
     <link rel="stylesheet" type="text/css" href="main.css" /> 
     <!--This allows us to display social media buttons at the bottom of the page-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
       /* Basic responsiveness */
       .container {
@@ -118,7 +118,7 @@
           <h3 class="home">A Team of Expert Mobile Repair Professionals for Comprehensive Onsite Services.</h3>
           <p class="home">Welcome to Mobile Zone, your one-stop-shop for all your mobile repair needs. 
             With over 10 years of experience in the industry, we have become one of the most trusted and reliable mobile repair shops in town.</p>
-            <button class="secondary" onclick="openLink(this)" value = "about.html">Know More About Us →</button>
+            <button id = "button1", class="secondary" onclick="openLink(this)" value = "about.html">Know More About Us →</button>
         </div>
       </div>
 
@@ -200,6 +200,9 @@
   </div>
 
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="main.js"></script>
 <script>
   function callNumber(phoneNumber) {

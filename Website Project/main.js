@@ -45,3 +45,25 @@ gsap.from("#box2", {x: 1200, duration: 1}, 0.25);
 
 gsap.from("#title6", {y: -500, duration: 1}, 0);
 gsap.from(".article", {scrollTrigger: {trigger: ".article", start: "top-=500px 80%", end: "top top"}, y: 500, duration: 1, opacity: 0}, 0.5);
+
+function emailSend() {
+    var firstName = document.getElementById('fname').value;
+    var lastName = document.getElementById('lname').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+
+    var messageBody = "Name: " + firstName + " " + lastName + 
+    "<br/> Email: " + email +
+    "<br/> Message: " + message;
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "shelbybalsano@gmail.com",
+        Password : "D6DC03EA3307F761C31E7082B96689910174",
+        To : 'shelbybalsano@yahoo.com',
+        From : "shelbybalsano@gmail.com",
+        Subject : "Thank you for your appointmnet!!",
+        Body : messageBody
+    }).then(
+      message => alert(message)
+    );
+}

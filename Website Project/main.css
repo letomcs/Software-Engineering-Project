@@ -447,19 +447,19 @@ img {
     }
 
     ul.menu {
-        
         width: 100%;
-        height: 40vh;
+        height: 50vh;
         background: rgb(27, 27, 184);
         left: -100%; /* hide the menu initially */
         text-align: center;
         display: none; /* hide the menu initially */
-        transition: left 0.5s; /* add a transition effect */
+        transition: left 0.5s, opacity 0.5s; /* add a transition effect */
+        overflow-x: hidden;
     }
 
     nav ul.menu li {
         display: block;
-        margin: 12px
+        margin: 12px;
     }
 
     nav ul li a {
